@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChrisDayPro | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HackerDeDoDah/myBoot@main/myboot.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="console-outer b-rad-3">
+                <div class="console-inner b-rad-3">
+                    <div class="console-screen b-rad-4 screen" id="console-screen">
+                        <ul>
+                            <li id="welcome">Welcome! (click RUN)</li>
+                            <li id="projects">Projects ▼
+                                <ol>
+                                    <li><a href="#">Netmatters Home Page Clone</a></li>
+                                    <li><a href="#">Random Picture Array</a></li>
+                                    <li><a href="#">Project 3</a></li>
+                                    <li><a href="#">Project 4</a></li>
+                                    <li><a href="#">Project 5</a></li>
+                                    <li><a href="#">Project 6</a></li>
+                                </ol>
+                            </li>
+                            <li id="about">About Me</li>
+                            <li id="contact">Contact Me</li>
+                            <li id="scion">Scion Project</li>
+                            <li id="code">Code Snippets</li>
+                        </ul>
+                    </div>
+                    <div class="button-container">
+                        <div class="key">RUN</div>
+                        <audio id="run-sound">
+                            <source src="welcome to the future.m4a" type="audio/mp4">
+                        </audio>
+                        <div class="key">EXIT</div>
+                        <audio id="exit-sound">
+                            <source src="ohbot.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                </div>
+            </section>
+            <section class="matrix-outer b-rad-3">
+                <div class="matrix-inner b-rad-3">
+                    <div class="matrix-screen b-rad-4">
+                        <canvas id="canvas" class="b-rad-4"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="screw-container">
+            <div class="screw"></div>
+            <div class="screw"></div>
+            <div class="screw"></div>
+            <div class="screw"></div>
+        </section>
+        <section class="monitor-outer b-rad-3">
+            <div class="monitor-inner b-rad-3">
+                <div class="monitor-screen b-rad-4 screen" id="monitor-screen">
+                    <div id="waiting-text">Waiting for input...</div>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
