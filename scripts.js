@@ -103,8 +103,10 @@ document.addEventListener("DOMContentLoaded", function() {
 // -- sound ---
 
 document.addEventListener("DOMContentLoaded", function () {
-    const runButton = document.querySelector(".key:nth-child(1)"); // Select the first button (RUN)
+    const runButton = document.querySelector(".key:nth-child(1)"); // Select the RUN button
     const runSound = document.getElementById("run-sound");
+    const exitButton = document.querySelector(".key:nth-child(2)"); // Select the EXIT button
+    const exitSound = document.getElementById("exit-sound");
 
     runButton.addEventListener("click", function () {
         if (runSound.paused) {
@@ -112,12 +114,12 @@ document.addEventListener("DOMContentLoaded", function () {
             runSound.play().catch(error => console.error("Audio play error:", error)); // Handle errors
         }
     });
+
+    exitButton.addEventListener("click", function () {
+        exitSound.currentTime = 0;
+        exitSound.play();
+    });
 });
 
-const exitButton = document.querySelector(".key:nth-child(2)"); // Select the EXIT button
-const exitSound = document.getElementById("exit-sound");
 
-exitButton.addEventListener("click", function () {
-    exitSound.currentTime = 0;
-    exitSound.play();
-});
+
