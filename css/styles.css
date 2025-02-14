@@ -44,7 +44,7 @@ body {
     margin: 10px;
     padding: 10px;
     border: 3px solid rgb(42, 41, 41);
-    background-color: #555555;
+    background-color: #555;
     color: #0f0;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -54,7 +54,7 @@ body {
     height: 230px;
     overflow-y: auto;
     margin: 4px;
-    background: radial-gradient(circle, #323131, #222222);
+    background: radial-gradient(circle, #2b2b2b, #171717);
     border: 1px solid rgb(77, 76, 76);
     box-shadow: inset 2px 2px 9px rgba(0, 0, 0, 0.7), 
                 2px 2px 4px rgba(80, 50, 30, 0.4); /* Rusty Glow */
@@ -95,6 +95,7 @@ ul li:hover::after {
     width: auto;
     height: auto;
     padding: 4px;
+    background-color: #3b3b3b;
     border: 2px solid rgb(77, 76, 76);
     border-radius: 8px;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -148,7 +149,7 @@ ul li:hover::after {
     margin: 10px;
     padding: 10px;
     border: 3px solid rgb(42, 41, 41);
-    background-color: #555555;
+    background-color: #555;
     color: #55ff55;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -308,4 +309,26 @@ ul li:hover::after {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     filter: blur(1px);
+}
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 5px;
+    padding: 5px;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid #0f0;
+    color: #0f0
+}
+
+h3 {
+    color: #0f0;
 }

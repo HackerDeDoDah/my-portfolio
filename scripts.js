@@ -121,5 +121,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#projects"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe");
 
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "projects.html"; // Load projects.html into the iframe
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#about"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "about.html"; // Load projects.html into the iframe
+    });
+});
 
