@@ -237,7 +237,7 @@ ul li:hover::after {
     border-radius: 8px;
 }
 
-#waiting-text {
+/* #waiting-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -250,11 +250,10 @@ ul li:hover::after {
     animation: flash 1s infinite alternate;
 }
 
-/* Flashing effect */
 @keyframes flash {
     0% { opacity: 1; }
     100% { opacity: 0; }
-}
+} */
 
 
 .screw-container {
@@ -329,6 +328,85 @@ ul li:hover::after {
     color: #0f0
 }
 
-h3 {
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border: 2px dashed #0f0;
+    padding: 2px;
+}
+
+h3, p, a, h1, h2 {
     color: #0f0;
+}
+
+/*--- form---*/
+
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #0f0;
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    border: 1px solid #0f0;
+    background-color: black;
+    color: #0f0;
+    margin-top: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #0f0;
+    color: black;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1120px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr 2fr;
+    }
 }
