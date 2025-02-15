@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     padding: 15px;
-    background-color: #3a3a3a;
+    background-color: #494949c3;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
     background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
     border: 2px solid #3b3b3b;
     box-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7),
+        2px 2px 15px rgba(0, 0, 0, 0.7),
         inset 3px 3px 8px rgba(80, 50, 30, 0.5); /* Inner Rust Effect */
     filter: sepia(20%) contrast(90%);
 }
@@ -135,7 +135,7 @@ ul li:hover::after {
     background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
     border: 2px solid #3b3b3b;
     box-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7),
+        2px 2px 15px rgba(0, 0, 0, 0.7),
         inset 3px 3px 8px rgba(80, 50, 30, 0.5); /* Inner Rust Effect */
     filter: sepia(20%) contrast(90%);
 }
@@ -193,7 +193,7 @@ ul li:hover::after {
     background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
     border: 2px solid #3b3b3b;
     box-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7),
+        2px 2px 15px rgba(0, 0, 0, 0.7),
         inset 3px 3px 8px rgba(80, 50, 30, 0.5); /* Inner Rust Effect */
     filter: sepia(20%) contrast(90%);
 }
@@ -315,11 +315,17 @@ ul li:hover::after {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 1fr);
-    gap: 5px;
+    gap: 10px;
     padding: 5px;
     margin: 0;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .card {
