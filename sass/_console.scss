@@ -1,0 +1,89 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.console-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
+    border: 2px solid #3b3b3b;
+    box-shadow: 
+        2px 2px 15px rgba(0, 0, 0, 0.7),
+        inset 3px 3px 8px rgba(80, 50, 30, 0.5); /* Inner Rust Effect */
+    filter: sepia(20%) contrast(90%);
+}
+
+
+.console-inner {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid rgb(42, 41, 41);
+    background-color: #555;
+    color: #0f0;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.console-screen {
+    width: auto;
+    height: 230px;
+    overflow-y: auto;
+    margin: 4px;
+    background: radial-gradient(circle, #2b2b2b, #171717);
+    border: 1px solid rgb(77, 76, 76);
+    box-shadow: inset 2px 2px 9px rgba(0, 0, 0, 0.7), 
+                2px 2px 4px rgba(80, 50, 30, 0.4); /* Rusty Glow */
+    filter: contrast(85%) brightness(90%);
+}
+
+#projects ol {
+    display: none; 
+    padding-left: 20px;
+    color: #0f0;
+    a {
+        color: #0f0;
+    }
+}
+
+ul {
+    line-height: 2rem;
+    padding: 10;
+    cursor: pointer;
+}
+
+ul li {
+    position: relative;
+    padding-right: 20px;
+}
+
+ul li:hover::after {
+    content: "<<";
+    color: #55ff55;
+    padding-left: 10px;
+    position: relative;
+    right: 0;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    height: auto;
+    padding: 4px;
+    background-color: #3b3b3b;
+    border: 2px solid rgb(77, 76, 76);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
