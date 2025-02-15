@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// -- bottom monitor ---
+
 document.addEventListener("DOMContentLoaded", function () {
     const projectsListItem = document.querySelector("#projects"); // Select the li with id 'projects'
     const monitorIframe = document.getElementById("monitor-iframe");

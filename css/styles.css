@@ -8,8 +8,14 @@ html {
 
 body {
     margin: 0;
-    padding: 15px;
+    padding: 0;
     background-color: #494949c3;
+}
+
+@media (min-width: 450px) {
+    body {
+        padding: 15px;
+    }
 }
 
 .container {
