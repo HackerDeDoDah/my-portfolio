@@ -333,6 +333,7 @@ img {
     width: 100%;
     height: auto;
     border: 2px dashed #0f0;
+    border-radius: 4px;
     padding: 2px;
 }
 
@@ -344,16 +345,21 @@ h3, p, a, h1, h2 {
 
 
 
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    color: #0f0;
-    padding: 20px;
-}
-
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        margin: 20px auto;
+    }
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 form {
@@ -371,31 +377,40 @@ textarea {
     font-family: 'Courier New', Courier, monospace;
     padding: 8px;
     border: 1px solid #0f0;
-    background-color: black;
+    border-radius: 4px;
+    background-color: #4e4e4e;
     color: #0f0;
     margin-top: 4px;
     width: 100%;
     box-sizing: border-box;
 }
 
+input::placeholder {
+    color: #0f0;
+}
+
 textarea {
     resize: none;
 }
 
+textarea::placeholder {
+    color: #0f0;
+}
+
 button[type="submit"] {
-    background-color: black;
+    background-color: #4e4e4e;
     color: #0f0;
     border: 1px solid #0f0;
+    border-radius: 18px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
     text-transform: uppercase;
 }
 
 button[type="submit"]:hover {
     background-color: #0f0;
-    color: black;
+    color: #4e4e4e;
 }
 
 .contact-container {
@@ -407,6 +422,6 @@ button[type="submit"]:hover {
 
 @media (min-width: 768px) {
     .contact-container {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 }

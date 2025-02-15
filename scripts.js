@@ -160,3 +160,13 @@ document.addEventListener("DOMContentLoaded", function () {
         monitorIframe.src = "scion.html"; // Load projects.html into the iframe
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#code"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "code.html"; // Load projects.html into the iframe
+    });
+});
