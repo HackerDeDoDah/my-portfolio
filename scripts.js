@@ -172,3 +172,61 @@ document.addEventListener("DOMContentLoaded", function () {
         monitorIframe.src = "code.html"; // Load projects.html into the iframe
     });
 });
+
+
+
+//----------------------------------------
+//----------------------------------------
+//----------------------------------------
+
+// -- monitor.html ---
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#projects"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "projects.html"; // Load projects.html into the iframe
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#about"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "about.html"; // Load projects.html into the iframe
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#contact"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "contact.html"; // Load projects.html into the iframe
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#scion"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "scion.html"; // Load projects.html into the iframe
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#code"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "code.html"; // Load projects.html into the iframe
+    });
+});
