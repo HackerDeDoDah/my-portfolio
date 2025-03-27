@@ -62,9 +62,10 @@
             <div class="screw"></div>
             <div class="screw"></div>
         </section>
-        <div>
-            <img class="cog" src="images/cog1.png" alt="cog">
-        </div>
+        <section class="cog">
+            <img id="cog" src="images/cog2.webp" alt="cog">
+            <img id="cog" src="images/cog1.png" alt="cog">
+        </section>
     </main>
     <footer>
         

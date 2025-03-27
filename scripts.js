@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "projects.html"; // Load projects.html into the iframe
+        monitorIframe.src = "projects.php"; // Load projects.php into the iframe
     });
 });
 
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "about.html"; // Load projects.html into the iframe
+        monitorIframe.src = "about.php"; // Load projects.php into the iframe
     });
 });
 
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "contact.php"; // Load projects.html into the iframe
+        monitorIframe.src = "contact.php"; // Load projects.php into the iframe
     });
 });
 
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "scion.html"; // Load projects.html into the iframe
+        monitorIframe.src = "scion.php"; // Load projects.php into the iframe
     });
 });
 
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "code.html"; // Load projects.html into the iframe
+        monitorIframe.src = "code.php"; // Load projects.php into the iframe
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "welcome.html"; // Load projects.html into the iframe
+        monitorIframe.src = "welcome.php"; // Load projects.php into the iframe
     });
 });
 
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //----------------------------------------
 //----------------------------------------
 
-// -- monitor.html ---
+// -- monitor.php ---
 
 document.addEventListener("DOMContentLoaded", function () {
     const projectsListItem = document.querySelector("#projects"); // Select the li with id 'projects'
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "projects.html"; // Load projects.html into the iframe
+        monitorIframe.src = "projects.php"; // Load projects.php into the iframe
     });
 });
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "about.html"; // Load projects.html into the iframe
+        monitorIframe.src = "about.php"; // Load projects.php into the iframe
     });
 });
 
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "contact.php"; // Load projects.html into the iframe
+        monitorIframe.src = "contact.php"; // Load projects.php into the iframe
     });
 });
 
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "scion.html"; // Load projects.html into the iframe
+        monitorIframe.src = "scion.php"; // Load projects.php into the iframe
     });
 });
 
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "code.html"; // Load projects.html into the iframe
+        monitorIframe.src = "code.php"; // Load projects.php into the iframe
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -245,6 +245,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "welcome.html"; // Load projects.html into the iframe
+        monitorIframe.src = "welcome.php"; // Load projects.php into the iframe
     });
+});
+
+//------form-----------
+
+// form submission
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const company = document.getElementById('company');
+        const message = document.getElementById('message');
+
+        let isValid = true;
+
+        const errorElements = form.querySelectorAll('.error');
+        errorElements.forEach(el => el.remove());
+
+        if (!name.value.trim()) {
+            isValid = false;
+            showError(name, 'Your name is required.');
+        }
+
+        if (!validateEmail(email.value.trim())) {
+            isValid = false;
+            showError(email, 'Please enter a valid email address.');
+        }
+
+        if (!message.value.trim()) {
+            isValid = false;
+            showError(message, 'Message is required.');
+        }
+
+        // Submit if all good
+        if (isValid) {
+            alert('Form submitted successfully!');
+            form.submit();
+        }
+    });
+
+    function showError(inputElement, message) {
+        const error = document.createElement('div');
+        error.className = 'error';
+        error.style.color = 'red';
+        error.style.fontSize = '0.9rem';
+        error.textContent = message;
+        inputElement.parentElement.appendChild(error);
+    }
+
+    function validateEmail(email) {
+        const emailPattern = /^(?!test@test$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    }
 });

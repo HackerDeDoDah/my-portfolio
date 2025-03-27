@@ -1,0 +1,15 @@
+{
+    "name": "monke/my_portfolio",
+    "autoload": {
+        "psr-4": {
+            "Monke\\MyPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chris Day",
+            "email": "chrisdaypro@protonmail.com"
+        }
+    ],
+    "require": {}
+}

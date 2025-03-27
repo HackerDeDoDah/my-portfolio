@@ -24,19 +24,14 @@
         <div class="form-container">
             <div class="contact-form" >
                 <form id="form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="first-name" name="first_name" placeholder="First Name"required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
-                        </div>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name"required>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <input type="text" id="company" name="company" placeholder="Company" required>
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>

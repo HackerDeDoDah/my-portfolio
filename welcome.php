@@ -10,8 +10,8 @@
 <body>
     <div class="scheme">
         <h1>WELCOME TO THE FUTURE!!</h1>
-        <p>Welcome to my Portfolio.</p>
-        <p>I'm a web developer with a passion for creating innovative and user-friendly websites. I'm excited to</p>
+        <p>Welcome to my Portfolio.</p>.
+        <p>I'm a web developer with a passion for creating innovative and user-friendly websites. <br/>I'm excited to share my work with you and explore the possibilities of the digital world.</p>
     </div>
 </body>
 </html>
