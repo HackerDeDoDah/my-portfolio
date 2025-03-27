@@ -9,8 +9,8 @@
 </head>
 <body>
     <h2>Scss example</h2>
-    <p>This example was taken from the Netmatters home page assignment. The code refers to the article cards near the bottom of the page and styles all the cards the same in one section of code.</p>
-    <img src="images/Screenshot 2024-12-17 082732.png" alt="Code example from the Netmatters assignment.">
+    <p>This example was taken from the portfolio page assignment. The code refers to the css screws near the bottom of the page and styles them all the same in one section of code.</p>
+    <img src="images/code-snippit01.png" alt="Code example from portfolio assignment.">
 
     <h2>CSS min file example</h2>
     <p>This example is from my own Bootstrap-style CDN, which can be found <a href="https://github.com/HackerDeDoDah/myBoot" target="_blank">here</a>. I will be adding to it continuously throughout my career, but for simple pages, I think it has enough features. </p>

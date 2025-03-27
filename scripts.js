@@ -116,8 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     exitButton.addEventListener("click", function () {
-        exitSound.currentTime = 0;
-        exitSound.play();
+        if (exitSound.paused) {
+            exitSound.currentTime = 0;
+            exitSound.play().catch(error => console.error("Audio play error:", error));
+
+            window.close();
+        }
     });
 });
 
