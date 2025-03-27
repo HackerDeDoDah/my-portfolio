@@ -1,8 +1,9 @@
 <?php
+require 'vendor/autoload.php';  // PHPMailer autoload
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';  // PHPMailer autoload
 
 $servername = "localhost";
 $username = "root";
@@ -58,12 +59,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         //Server settings
         $mail->isSMTP();
-        $mail->Host       = 'sandbox.smtp.mailtrap.io';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = '7ce8264711db54';  // Mailtrap username
-        $mail->Password   = 'a3e9e03dfd9968';  // Mailtrap password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 2525;
+        $mail->Host = 'sandbox.smtp.mailtrap.io';
+        $mail->SMTPAuth = true;
+        $mail->Port = 2525;
+        $mail->Username = '7ce8264711db54';
+        $mail->Password = 'a3e9e03dfd9968';
 
         //Recipients
         $mail->setFrom('chrisdaypro@protonmail.com', 'Job Queries from Portfolio');
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Message has been sent';
         
         // Redirect to success page after email is sent
-        header("Location: index.php?success=1#form");
+        header("Location: success.php?success=1#form");
         exit;
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

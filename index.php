@@ -66,15 +66,15 @@
             <div class="screw"></div>
         </section>
 
-        <section class="cog">
+        <!-- <section class="cog">
             <img id="cog" src="images/cog2.webp" alt="cog">
             <img id="cog" src="images/cog1.png" alt="cog">
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>&copy; Chris Day</p>
-    </footer>
+    </footer> -->
     <script src="scripts.js"></script>
 </body>
 </html>
