@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "contact.html"; // Load projects.html into the iframe
+        monitorIframe.src = "contact.php"; // Load projects.html into the iframe
     });
 });
 
@@ -170,6 +170,15 @@ document.addEventListener("DOMContentLoaded", function () {
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
         monitorIframe.src = "code.html"; // Load projects.html into the iframe
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#welcome"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "welcome.html"; // Load projects.html into the iframe
     });
 });
 
@@ -207,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
-        monitorIframe.src = "contact.html"; // Load projects.html into the iframe
+        monitorIframe.src = "contact.php"; // Load projects.html into the iframe
     });
 });
 
@@ -228,5 +237,14 @@ document.addEventListener("DOMContentLoaded", function () {
     projectsListItem.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent any default link behavior (if any)
         monitorIframe.src = "code.html"; // Load projects.html into the iframe
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsListItem = document.querySelector("#welcome"); // Select the li with id 'projects'
+    const monitorIframe = document.getElementById("monitor-iframe2");
+
+    projectsListItem.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent any default link behavior (if any)
+        monitorIframe.src = "welcome.html"; // Load projects.html into the iframe
     });
 });
