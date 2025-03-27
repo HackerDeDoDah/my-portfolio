@@ -16,6 +16,12 @@ body {
     padding: 15px;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -29,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 400px;
   max-width: 1200px;
   margin: 0 auto;
   background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgb(56, 54, 54)); /* Rust Effect */
@@ -107,7 +114,7 @@ ul li:hover::after {
   width: 100%;
   max-width: 1200px;
   max-height: 90vh;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgb(56, 54, 54)); /* Rust Effect */
   border: 2px solid #3b3b3b;
@@ -348,6 +355,7 @@ button[type=submit]:hover {
   margin: 4px;
   background: radial-gradient(circle, #2a2a2a, #111); /* Dark screen */
   border: 2px solid rgb(77, 76, 76);
+  border-radius: 8px;
   box-shadow: inset 2px 2px 9px rgba(0, 0, 0, 0.7), 2px 2px 4px rgba(80, 50, 30, 0.4); /* Rusty glow */
   filter: contrast(85%) brightness(90%) sepia(10%);
 }
@@ -398,7 +406,7 @@ button[type=submit]:hover {
   display: none;
   flex-direction: column;
   width: auto;
-  height: 300px;
+  height: 320px;
   margin: 10px;
   padding: 10px;
   border: 3px solid rgb(42, 41, 41);
@@ -407,7 +415,7 @@ button[type=submit]:hover {
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-#canvas {
+canvas {
   display: none;
   width: 535px;
   height: 290px;

@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 1200px;
     max-height: 90vh;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
     border: 2px solid #3b3b3b;
@@ -278,6 +278,7 @@ button[type="submit"]:hover {
     margin: 4px;
     background: radial-gradient(circle, #2a2a2a, #111); /* Dark screen */
     border: 2px solid rgb(77, 76, 76);
+    border-radius: 8px;
     box-shadow: 
         inset 2px 2px 9px rgba(0, 0, 0, 0.7),
         2px 2px 4px rgba(80, 50, 30, 0.4); /* Rusty glow */

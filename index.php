@@ -43,12 +43,14 @@
                 </div>
             </section>
         </div>
+
         <section class="screw-container">
             <div class="screw"></div>
             <div class="screw"></div>
             <div class="screw"></div>
             <div class="screw"></div>
         </section>
+
         <section class="monitor-outer b-rad-3">
             <div class="monitor-inner b-rad-3">
                 <div class="monitor-screen b-rad-4 screen" id="monitor-screen">
@@ -56,19 +58,22 @@
                 </div>
             </div>
         </section>
+
         <section class="screw-container">
             <div class="screw"></div>
             <div class="screw"></div>
             <div class="screw"></div>
             <div class="screw"></div>
         </section>
+
         <section class="cog">
             <img id="cog" src="images/cog2.webp" alt="cog">
             <img id="cog" src="images/cog1.png" alt="cog">
         </section>
     </main>
+
     <footer>
-        
+        <p>&copy; Chris Day</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
