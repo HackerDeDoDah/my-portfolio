@@ -29,6 +29,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
+    height: 400px;
     margin: 0 auto;
     background: radial-gradient(circle, rgba(80, 50, 30, 0.3), rgba(56, 54, 54, 1)); /* Rust Effect */
     border: 2px solid #3b3b3b;
@@ -55,7 +56,8 @@
 canvas{
     display: none;
     width: 535px;
-    height: auto;
+    max-height: 290px;
+    height: 100%;
     overflow-y: auto;
     margin: 4px;
     background: radial-gradient(circle, #323131, #222222);
