@@ -14,12 +14,12 @@
                 <div class="console-inner b-rad-3">
                     <div class="console-screen b-rad-4 screen" id="console-screen">
                         <ul>
-                            <li id="welcome">Welcome! (click RUN)</li>
-                            <li id="projects">Projects</li>
-                            <li id="about">About Me</li>
-                            <li id="contact">Contact Me</li>
-                            <li id="scion">Scion Project</li>
-                            <li id="code">Code Snippets</li>
+                            <li><a id="welcome" href="#screws">Welcome! (click RUN)</a></li>
+                            <li><a id="projects" href="#screws">Projects</a></li>
+                            <li><a id="about" href="#screws">About Me</a></li>
+                            <li><a id="contact" href="#screws">Contact Me</a></li>
+                            <li><a id="scion" href="#screws">Scion Project</a></li>
+                            <li><a id="code" href="#screws">Code Snippets</a></li>
                         </ul>
                     </div>
                     <div class="button-container">
@@ -38,13 +38,13 @@
             <section class="matrix-outer b-rad-3">
                 <div class="matrix-inner b-rad-3">
                     <div class="matrix-screen b-rad-4">
-                        <canvas id="canvas" class="b-rad-4" placeholder="Loading Teminal..."></canvas>
+                        <!-- <canvas id="canvas" class="b-rad-4" placeholder="Loading Teminal..."></canvas> -->
                     </div>
                 </div>
             </section>
         </div>
 
-        <section class="screw-container">
+        <section class="screw-container" id="screws">
             <div class="screw"></div>
             <div class="screw"></div>
             <div class="screw"></div>

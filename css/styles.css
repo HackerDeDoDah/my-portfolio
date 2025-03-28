@@ -3,6 +3,7 @@ html {
   padding: 0;
   border: 0;
   font-family: monospace, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -68,13 +69,14 @@ footer {
   filter: contrast(85%) brightness(90%);
 }
 
-#projects ol {
+#projects ul {
   display: none;
   padding-left: 20px;
   color: #0f0;
 }
-#projects ol a {
+#projects ul a {
   color: #0f0;
+  text-decoration: none;
 }
 
 ul {

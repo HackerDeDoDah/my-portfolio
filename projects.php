@@ -13,13 +13,13 @@
             <img src="images/Screenshot 2025-02-15 104502.png" alt="Project Image">
             <h2>Netmatters Website Clone</h2>
             <p>HTML & CSS Assessment to rebuild the Netmatters homepage.</p>
-            <a href="https://hackerdedodah.github.io/netmatters2/" target="_blank">View Here</a>
+            <a href="http://netmatters.christopher-day.netmatters-scs.co.uk/" target="_blank">View Here</a>
         </div>
         <div class="card">
             <img src="images/Screenshot 2025-02-15 104550.png" alt="Project Image">
             <h2>Random Image Array</h2>
             <p>Javascript Array assessment to build a random picture generator with save capabilities</p>
-            <a href="https://hackerdedodah.github.io/js-array-picture/" target="_blank">View Here</a>
+            <a href="http://js-array.christopher-day.netmatters-scs.co.uk/" target="_blank">View Here</a>
         </div>
         <div class="card">
             <img src="project-image.jpg" alt="Project Image">

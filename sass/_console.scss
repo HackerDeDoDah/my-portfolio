@@ -49,12 +49,13 @@
     filter: contrast(85%) brightness(90%);
 }
 
-#projects ol {
+#projects ul {
     display: none; 
     padding-left: 20px;
     color: #0f0;
     a {
         color: #0f0;
+        text-decoration: none;
     }
 }
 
@@ -88,3 +89,4 @@ ul li:hover::after {
     border-radius: 8px;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
+
