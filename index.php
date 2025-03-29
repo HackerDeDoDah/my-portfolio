@@ -66,10 +66,10 @@
             <div class="screw"></div>
         </section>
 
-        <!-- <section class="cog">
-            <img id="cog" src="images/cog2.webp" alt="cog">
-            <img id="cog" src="images/cog1.png" alt="cog">
-        </section> -->
+        <section>
+            <img class="cog1" src="images/cog2.webp" alt="cog">
+            <img class="cog2" src="images/cog1.png" alt="cog">
+        </section>
     </main>
 
     <!-- <footer>
