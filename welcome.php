@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="scheme">
+    <div class="welcome">
         <h1>WELCOME TO THE FUTURE!!</h1>
-        <p>Welcome to my Portfolio.</p>.
-        <p>I'm a web developer with a passion for creating innovative and user-friendly websites. <br/>I'm excited to share my work with you and explore the possibilities of the digital world.</p>
+        <h2>Chris Day</h2>
+        <h3>Web Developer</h3>
+        <h3>UI/UX Designer</h3>
+        <h3>Maker of all things Tech</h3>
     </div>
 </body>
 </html>

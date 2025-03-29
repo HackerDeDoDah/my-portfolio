@@ -321,6 +321,27 @@ button[type=submit]:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.welcome h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.welcome h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
 .monitor-outer2 {
   display: flex;
   flex-direction: column;

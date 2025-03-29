@@ -3,11 +3,15 @@ require 'vendor/autoload.php';  // PHPMailer autoload
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
+// Load environment variables
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = $_ENV['DB_HOST'];
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
 $database = "form_data";
 
 $conn = new mysqli($servername, $username, $password, $database);
@@ -59,24 +63,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         //Server settings
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';
+        $mail->Host = $_ENV['SMTP_HOST'];
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
-        $mail->Username = '7ce8264711db54';
-        $mail->Password = 'a3e9e03dfd9968';
+        $mail->Port = $_ENV['SMTP_PORT'];
+        $mail->Username = $_ENV['SMTP_USERNAME'];
+        $mail->Password = $_ENV['SMTP_PASSWORD'];
 
         //Recipients
-        $mail->setFrom('chrisdaypro@protonmail.com', 'Job Queries from Portfolio');
-        $mail->addAddress('monkey0679@gmail.com', 'Christopher Day');
+        $mail->setFrom($_ENV['SMTP_FROM_EMAIL'], $_ENV['SMTP_FROM_NAME']);
+        $mail->addAddress($_ENV['SMTP_TO_EMAIL'], $_ENV['SMTP_TO_NAME']);
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "<h1>New Contact Form Submission</h1>
-                        <p><strong>Name:</strong> $name</p>
+        $mail->Subject = 'New Portfolio Contact Query';
+        $mail->Body    = "<h1>New Portfolio Contact Query</h1>
+                        <p><strong>You have a message from</strong> $name</p>
                         <p><strong>Company:</strong> $company</p>
                         <p><strong>Email:</strong> $email</p>
-                        <p><strong>Message:</strong> $message</p>";
+                        <p><strong>Message reads:</strong> $message</p>";
 
         // Send email
         $mail->send();
